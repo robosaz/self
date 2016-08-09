@@ -1,7 +1,7 @@
 do
     
 function run(msg, matches)
-  local help = [[Beyond Self Commands
+  local help = [[Self Commands:
 
 🔴دستورات مدیریتی ربات👇
 
