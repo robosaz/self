@@ -128,11 +128,13 @@ function run(msg, matches)
 مثال : !clean msg 100
 
 ➖➖➖➖➖➖
-Team Channel : 😎@BeyondTeam 😎
+Based on (http://github.com/janlou/AdvanSource)
+Thanks to ( @BeyondTeam ) for plugins
+@BeyondTeam & @AdvanTm
 ➖➖➖➖➖➖]]
     if matches[1] == 'help' and is_sudo(msg) then
-      send_large_msg("user#id"..msg.from.id, help)      
-   return 'Help was sent in your private message'
+      send_msg("user#id"..msg.from.id, help)      
+   return 'Help was sent in your private message :)'
     end
 end 
 
