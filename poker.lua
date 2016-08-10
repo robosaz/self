@@ -1,7 +1,8 @@
 do
  
  function run(msg, matches)
-     
+ 
+ if is_sudo(msg) then
    if msg.text:match("^[!/#]([Pp][Oo][Kk][Ee][Rr]) ([Oo][Nn])$") then
        redis:set("poker:send", "on")
        return "Poker = on"
@@ -9,6 +10,7 @@ do
        redis:set("poker:send", "off")
        return "Poker = off"
    end
+  end
    
      if msg.text:match("😐") then
          if redis:get("poker:send") == "on" then
