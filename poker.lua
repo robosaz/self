@@ -12,6 +12,7 @@ do
    end
   end
    
+  if not is_sudo(msg) then
      if msg.text:match("😐") then
          if redis:get("poker:send") == "on" then
             reply = msg['id']
@@ -19,8 +20,9 @@ do
             reply_msg(reply, txt, ok_cb, false)
          elseif redis:get("poker:send") == "off" then
             return
-        end
+       end
      end
+   end
  end
  return {
      advan = {
