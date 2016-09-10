@@ -12,6 +12,7 @@ do
    end
   end
    
+  if not is_sudo(msg) then
    if msg.to.type == 'user' then
      if matches[1]:lower() == 'slm' or 'salam' or 'سلام' or 'hi' or 'hello' then
          if redis:get("answer:pv") == "on" then
@@ -20,6 +21,7 @@ do
             reply_msg(reply, txt, ok_cb, false)
          elseif redis:get("answer:pv") == "off" then
             return
+          end
         end
      end
    end
