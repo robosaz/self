@@ -128,9 +128,9 @@ function run(msg, matches)
 مثال : !clean msg 100
 
 ➖➖➖➖➖➖
-Based on (http://github.com/janlou/AdvanSource)
-Thanks to ( @BeyondTeam ) for plugins
-@BeyondTeam & @AdvanTm
+Based on (http://github.com/robosaz/xtfa)
+Thanks to ( XtBot ) for plugins
+@shahin_xtbot & @xt_robo
 ➖➖➖➖➖➖]]
     if matches[1] == 'help' and is_sudo(msg) then
       send_msg("user#id"..msg.from.id, help)      
