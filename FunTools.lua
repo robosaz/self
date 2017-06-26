@@ -310,6 +310,6 @@ patterns = {
 run = run,
 }
 
---Thanks to @BeyondTeam
---by @BeyondTeam :)
---By @CliApi
+--Thanks to XtBot
+--by @shahin_xtbot :)
+--By @xt_robo
